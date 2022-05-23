@@ -4,7 +4,7 @@ Nvidia GTX1060 Mobile / Intel i7 7700HQ / Windows 10
 
 ![image](https://user-images.githubusercontent.com/21983582/169753468-83fabe81-9544-42d5-8711-fe674313b4d3.png)
 
-![image](https://user-images.githubusercontent.com/21983582/169753552-ce783360-1bc3-4319-89d5-f4c75aa30e8b.png)
+![image](https://user-images.githubusercontent.com/21983582/169755230-8e17fb1f-4b92-433f-baac-e20f8c73b217.png)
 
 Running log (M = N, K = 1024):
 
