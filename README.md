@@ -2,9 +2,9 @@
 
 Nvidia GTX1060 Mobile / Intel i7 7700HQ / Windows 10
 
-![image](https://user-images.githubusercontent.com/21983582/169753468-83fabe81-9544-42d5-8711-fe674313b4d3.png)
+![image](https://user-images.githubusercontent.com/21983582/170164400-11eaa871-d5b0-4584-a61d-b18a75bb2e2f.png)
 
-![image](https://user-images.githubusercontent.com/21983582/169755230-8e17fb1f-4b92-433f-baac-e20f8c73b217.png)
+![image](https://user-images.githubusercontent.com/21983582/170164847-da596868-0718-49b0-83a1-020c12561ba3.png)
 
 Running log (M = N, K = 1024):
 
@@ -13,21 +13,21 @@ sgemm.exe
 
 Kernal = cublas
 Max Error = 0.000046
-M N K =    128    128   1024, Time =   0.00002662   0.00002932   0.00004278 s, AVG Performance =  1065.8835 Gflops
-M N K =    192    192   1024, Time =   0.00004915   0.00004961   0.00005018 s, AVG Performance =  1417.3164 Gflops
-M N K =    256    256   1024, Time =   0.00007475   0.00007566   0.00007667 s, AVG Performance =  1652.1803 Gflops
-M N K =    384    384   1024, Time =   0.00013005   0.00015385   0.00020582 s, AVG Performance =  1828.0460 Gflops
-M N K =    512    512   1024, Time =   0.00021088   0.00022324   0.00023040 s, AVG Performance =  2239.7580 Gflops
-M N K =    768    768   1024, Time =   0.00043888   0.00044099   0.00044851 s, AVG Performance =  2551.0667 Gflops
-M N K =   1024   1024   1024, Time =   0.00081408   0.00081828   0.00082739 s, AVG Performance =  2444.1655 Gflops
-M N K =   1536   1536   1024, Time =   0.00168755   0.00169736   0.00171213 s, AVG Performance =  2651.1710 Gflops
-M N K =   2048   2048   1024, Time =   0.00285696   0.00286396   0.00288141 s, AVG Performance =  2793.3304 Gflops
-M N K =   3072   3072   1024, Time =   0.00580179   0.00613625   0.00635904 s, AVG Performance =  2933.3894 Gflops
-M N K =   4096   4096   1024, Time =   0.00947098   0.01011981   0.01050010 s, AVG Performance =  3162.1153 Gflops
-M N K =   6144   6144   1024, Time =   0.01937869   0.02004199   0.02133094 s, AVG Performance =  3592.4571 Gflops
-M N K =   8192   8192   1024, Time =   0.03458202   0.03522148   0.03578778 s, AVG Performance =  3634.1458 Gflops
-M N K =  12288  12288   1024, Time =   0.07963402   0.08065668   0.08200268 s, AVG Performance =  3570.6899 Gflops
-M N K =  16384  16384   1024, Time =   0.14197831   0.14302681   0.14371482 s, AVG Performance =  3579.7485 Gflops
+M N K =    128    128   1024, Time =   0.00002685   0.00002840   0.00003270 s, AVG Performance =  1100.4761 Gflops
+M N K =    192    192   1024, Time =   0.00004867   0.00004924   0.00005008 s, AVG Performance =  1427.9085 Gflops
+M N K =    256    256   1024, Time =   0.00007475   0.00007637   0.00008499 s, AVG Performance =  1636.6740 Gflops
+M N K =    384    384   1024, Time =   0.00012986   0.00014474   0.00021914 s, AVG Performance =  1943.1072 Gflops
+M N K =    512    512   1024, Time =   0.00020685   0.00024922   0.00035123 s, AVG Performance =  2006.2917 Gflops
+M N K =    768    768   1024, Time =   0.00043917   0.00044606   0.00045770 s, AVG Performance =  2522.0777 Gflops
+M N K =   1024   1024   1024, Time =   0.00082602   0.00083253   0.00083968 s, AVG Performance =  2402.3216 Gflops
+M N K =   1536   1536   1024, Time =   0.00171315   0.00172099   0.00172954 s, AVG Performance =  2614.7710 Gflops
+M N K =   2048   2048   1024, Time =   0.00289952   0.00291363   0.00292454 s, AVG Performance =  2745.7170 Gflops
+M N K =   3072   3072   1024, Time =   0.00588800   0.00623962   0.00651062 s, AVG Performance =  2884.7900 Gflops
+M N K =   4096   4096   1024, Time =   0.00955597   0.01023476   0.01069312 s, AVG Performance =  3126.5994 Gflops
+M N K =   6144   6144   1024, Time =   0.01971395   0.02030813   0.02139507 s, AVG Performance =  3545.3785 Gflops
+M N K =   8192   8192   1024, Time =   0.03493463   0.03546315   0.03577405 s, AVG Performance =  3609.3808 Gflops
+M N K =  12288  12288   1024, Time =   0.08047309   0.08116153   0.08240794 s, AVG Performance =  3548.4790 Gflops
+M N K =  16384  16384   1024, Time =   0.14310503   0.14436133   0.14527786 s, AVG Performance =  3546.6561 Gflops
 
 Kernal = naiveSgemm
 Max Error = 0.000046
@@ -49,75 +49,57 @@ M N K =  16384  16384   1024, Time =   2.16142344   2.16171999   2.16234255 s, A
 
 Kernal = mySgemmV1Aligned
 Max Error = 0.000046
-M N K =    128    128   1024, Time =   0.00017715   0.00017846   0.00018320 s, AVG Performance =   175.1053 Gflops
-M N K =    192    192   1024, Time =   0.00017818   0.00017953   0.00018125 s, AVG Performance =   391.6555 Gflops
-M N K =    256    256   1024, Time =   0.00017306   0.00017422   0.00017510 s, AVG Performance =   717.4803 Gflops
-M N K =    384    384   1024, Time =   0.00017715   0.00017909   0.00018086 s, AVG Performance =  1570.4009 Gflops
-M N K =    512    512   1024, Time =   0.00023325   0.00023516   0.00024064 s, AVG Performance =  2126.2553 Gflops
-M N K =    768    768   1024, Time =   0.00047104   0.00047684   0.00049328 s, AVG Performance =  2359.2899 Gflops
-M N K =   1024   1024   1024, Time =   0.00088653   0.00088964   0.00089293 s, AVG Performance =  2248.1044 Gflops
-M N K =   1536   1536   1024, Time =   0.00182842   0.00183811   0.00189235 s, AVG Performance =  2448.1642 Gflops
-M N K =   2048   2048   1024, Time =   0.00308634   0.00309948   0.00312611 s, AVG Performance =  2581.0795 Gflops
-M N K =   3072   3072   1024, Time =   0.00676845   0.00682515   0.00690278 s, AVG Performance =  2637.3064 Gflops
-M N K =   4096   4096   1024, Time =   0.01213338   0.01217118   0.01221018 s, AVG Performance =  2629.1622 Gflops
-M N K =   6144   6144   1024, Time =   0.02705715   0.02716590   0.02731930 s, AVG Performance =  2650.3815 Gflops
-M N K =   8192   8192   1024, Time =   0.04823757   0.04869448   0.04899293 s, AVG Performance =  2628.6347 Gflops
-M N K =  12288  12288   1024, Time =   0.10925565   0.10989172   0.11017831 s, AVG Performance =  2620.7616 Gflops
-M N K =  16384  16384   1024, Time =   0.19456205   0.19479218   0.19503395 s, AVG Performance =  2628.4422 Gflops
+M N K =    128    128   1024, Time =   0.00017971   0.00018107   0.00018637 s, AVG Performance =   172.5833 Gflops
+M N K =    192    192   1024, Time =   0.00018022   0.00018209   0.00018534 s, AVG Performance =   386.1491 Gflops
+M N K =    256    256   1024, Time =   0.00017686   0.00017767   0.00017920 s, AVG Performance =   703.5373 Gflops
+M N K =    384    384   1024, Time =   0.00018070   0.00018248   0.00018390 s, AVG Performance =  1541.2648 Gflops
+M N K =    512    512   1024, Time =   0.00023757   0.00023936   0.00024166 s, AVG Performance =  2088.8758 Gflops
+M N K =    768    768   1024, Time =   0.00047802   0.00048452   0.00049254 s, AVG Performance =  2321.8626 Gflops
+M N K =   1024   1024   1024, Time =   0.00089702   0.00090037   0.00090448 s, AVG Performance =  2221.2982 Gflops
+M N K =   1536   1536   1024, Time =   0.00185203   0.00185554   0.00186355 s, AVG Performance =  2425.1753 Gflops
+M N K =   2048   2048   1024, Time =   0.00302285   0.00306102   0.00313955 s, AVG Performance =  2613.5073 Gflops
+M N K =   3072   3072   1024, Time =   0.00671635   0.00673164   0.00674477 s, AVG Performance =  2673.9417 Gflops
+M N K =   4096   4096   1024, Time =   0.01204429   0.01207474   0.01212099 s, AVG Performance =  2650.1615 Gflops
+M N K =   6144   6144   1024, Time =   0.02683597   0.02689617   0.02701107 s, AVG Performance =  2676.9608 Gflops
+M N K =   8192   8192   1024, Time =   0.04761907   0.04774611   0.04782166 s, AVG Performance =  2680.8469 Gflops
+M N K =  12288  12288   1024, Time =   0.10791834   0.10818793   0.10876569 s, AVG Performance =  2662.0346 Gflops
+M N K =  16384  16384   1024, Time =   0.19216794   0.19267596   0.19323191 s, AVG Performance =  2657.3112 Gflops
 
 Kernal = mySgemmV2Aligned
 Max Error = 0.000046
-M N K =    128    128   1024, Time =   0.00016896   0.00017198   0.00018739 s, AVG Performance =   181.7030 Gflops
-M N K =    192    192   1024, Time =   0.00017085   0.00017199   0.00017306 s, AVG Performance =   408.8164 Gflops
-M N K =    256    256   1024, Time =   0.00016653   0.00016727   0.00016794 s, AVG Performance =   747.3073 Gflops
-M N K =    384    384   1024, Time =   0.00016896   0.00017153   0.00017808 s, AVG Performance =  1639.6281 Gflops
-M N K =    512    512   1024, Time =   0.00023235   0.00023705   0.00024422 s, AVG Performance =  2109.2632 Gflops
-M N K =    768    768   1024, Time =   0.00047613   0.00048119   0.00048621 s, AVG Performance =  2337.9364 Gflops
-M N K =   1024   1024   1024, Time =   0.00088576   0.00089662   0.00095334 s, AVG Performance =  2230.6054 Gflops
-M N K =   1536   1536   1024, Time =   0.00183162   0.00183594   0.00184115 s, AVG Performance =  2451.0658 Gflops
-M N K =   2048   2048   1024, Time =   0.00305050   0.00308840   0.00311242 s, AVG Performance =  2590.3354 Gflops
-M N K =   3072   3072   1024, Time =   0.00678899   0.00680044   0.00681827 s, AVG Performance =  2646.8870 Gflops
-M N K =   4096   4096   1024, Time =   0.01213190   0.01216099   0.01221907 s, AVG Performance =  2631.3650 Gflops
-M N K =   6144   6144   1024, Time =   0.02711347   0.02718573   0.02728537 s, AVG Performance =  2648.4482 Gflops
-M N K =   8192   8192   1024, Time =   0.04817469   0.04853675   0.04890205 s, AVG Performance =  2637.1771 Gflops
-M N K =  12288  12288   1024, Time =   0.10932796   0.10979367   0.11018509 s, AVG Performance =  2623.1020 Gflops
-M N K =  16384  16384   1024, Time =   0.19380423   0.19445160   0.19493786 s, AVG Performance =  2633.0460 Gflops
+M N K =    128    128   1024, Time =   0.00016384   0.00016527   0.00017181 s, AVG Performance =   189.0841 Gflops
+M N K =    192    192   1024, Time =   0.00016486   0.00016659   0.00017258 s, AVG Performance =   422.0641 Gflops
+M N K =    256    256   1024, Time =   0.00015936   0.00016048   0.00016243 s, AVG Performance =   778.9288 Gflops
+M N K =    384    384   1024, Time =   0.00016470   0.00016641   0.00017514 s, AVG Performance =  1690.1393 Gflops
+M N K =    512    512   1024, Time =   0.00021296   0.00021517   0.00021670 s, AVG Performance =  2323.7311 Gflops
+M N K =    768    768   1024, Time =   0.00042176   0.00042483   0.00042906 s, AVG Performance =  2648.1056 Gflops
+M N K =   1024   1024   1024, Time =   0.00078842   0.00080404   0.00084787 s, AVG Performance =  2487.4335 Gflops
+M N K =   1536   1536   1024, Time =   0.00163786   0.00164295   0.00165037 s, AVG Performance =  2738.9750 Gflops
+M N K =   2048   2048   1024, Time =   0.00278733   0.00279471   0.00280269 s, AVG Performance =  2862.5506 Gflops
+M N K =   3072   3072   1024, Time =   0.00618394   0.00618980   0.00619664 s, AVG Performance =  2908.0107 Gflops
+M N K =   4096   4096   1024, Time =   0.01107238   0.01110948   0.01112534 s, AVG Performance =  2880.4233 Gflops
+M N K =   6144   6144   1024, Time =   0.02468816   0.02484096   0.02495590 s, AVG Performance =  2898.4387 Gflops
+M N K =   8192   8192   1024, Time =   0.04396442   0.04428450   0.04450201 s, AVG Performance =  2890.4019 Gflops
+M N K =  12288  12288   1024, Time =   0.10003763   0.10054756   0.10085478 s, AVG Performance =  2864.3160 Gflops
+M N K =  16384  16384   1024, Time =   0.17817806   0.17869232   0.17919971 s, AVG Performance =  2865.2603 Gflops
 
 Kernal = mySgemmV3Aligned
 Max Error = 0.000046
-M N K =    128    128   1024, Time =   0.00016550   0.00016648   0.00017267 s, AVG Performance =   187.7138 Gflops
-M N K =    192    192   1024, Time =   0.00016486   0.00016632   0.00016768 s, AVG Performance =   422.7462 Gflops
-M N K =    256    256   1024, Time =   0.00016048   0.00016135   0.00016346 s, AVG Performance =   774.7268 Gflops
-M N K =    384    384   1024, Time =   0.00016573   0.00016633   0.00016746 s, AVG Performance =  1690.9522 Gflops
-M N K =    512    512   1024, Time =   0.00021024   0.00021870   0.00024346 s, AVG Performance =  2286.2619 Gflops
-M N K =    768    768   1024, Time =   0.00042291   0.00042510   0.00043008 s, AVG Performance =  2646.4112 Gflops
-M N K =   1024   1024   1024, Time =   0.00079046   0.00079990   0.00084685 s, AVG Performance =  2500.3200 Gflops
-M N K =   1536   1536   1024, Time =   0.00164608   0.00166811   0.00171264 s, AVG Performance =  2697.6658 Gflops
-M N K =   2048   2048   1024, Time =   0.00280781   0.00282090   0.00287539 s, AVG Performance =  2835.9783 Gflops
-M N K =   3072   3072   1024, Time =   0.00632886   0.00633596   0.00635786 s, AVG Performance =  2840.9264 Gflops
-M N K =   4096   4096   1024, Time =   0.01113053   0.01119005   0.01138144 s, AVG Performance =  2859.6831 Gflops
-M N K =   6144   6144   1024, Time =   0.02483898   0.02519184   0.02529459 s, AVG Performance =  2858.0684 Gflops
-M N K =   8192   8192   1024, Time =   0.04444758   0.04485340   0.04520310 s, AVG Performance =  2853.7410 Gflops
-M N K =  12288  12288   1024, Time =   0.10097037   0.10190669   0.10264525 s, AVG Performance =  2826.1146 Gflops
-M N K =  16384  16384   1024, Time =   0.18014684   0.18080832   0.18168217 s, AVG Performance =  2831.7280 Gflops
-
-Kernal = mySgemmV4Aligned
-Max Error = 0.000046
-M N K =    128    128   1024, Time =   0.00010298   0.00010474   0.00011162 s, AVG Performance =   298.3601 Gflops
-M N K =    192    192   1024, Time =   0.00010298   0.00010612   0.00011674 s, AVG Performance =   662.5454 Gflops
-M N K =    256    256   1024, Time =   0.00010128   0.00010302   0.00011242 s, AVG Performance =  1213.3472 Gflops
-M N K =    384    384   1024, Time =   0.00010224   0.00010251   0.00010294 s, AVG Performance =  2743.6669 Gflops
-M N K =    512    512   1024, Time =   0.00016765   0.00016865   0.00016925 s, AVG Performance =  2964.7831 Gflops
-M N K =    768    768   1024, Time =   0.00033251   0.00033367   0.00033485 s, AVG Performance =  3371.6230 Gflops
-M N K =   1024   1024   1024, Time =   0.00059856   0.00060229   0.00060688 s, AVG Performance =  3320.6353 Gflops
-M N K =   1536   1536   1024, Time =   0.00125542   0.00125791   0.00126013 s, AVG Performance =  3577.3523 Gflops
-M N K =   2048   2048   1024, Time =   0.00215331   0.00215750   0.00216986 s, AVG Performance =  3707.9885 Gflops
-M N K =   3072   3072   1024, Time =   0.00479187   0.00479908   0.00481344 s, AVG Performance =  3750.7177 Gflops
-M N K =   4096   4096   1024, Time =   0.00829338   0.00837960   0.00855654 s, AVG Performance =  3818.7996 Gflops
-M N K =   6144   6144   1024, Time =   0.01874944   0.01917474   0.01933616 s, AVG Performance =  3754.9410 Gflops
-M N K =   8192   8192   1024, Time =   0.03418010   0.03460126   0.03478992 s, AVG Performance =  3699.2868 Gflops
-M N K =  12288  12288   1024, Time =   0.07723495   0.07907345   0.08032522 s, AVG Performance =  3642.1833 Gflops
-M N K =  16384  16384   1024, Time =   0.13962752   0.14066606   0.14220209 s, AVG Performance =  3639.8262 Gflops
+M N K =    128    128   1024, Time =   0.00010288   0.00010450   0.00011264 s, AVG Performance =   299.0454 Gflops
+M N K =    192    192   1024, Time =   0.00010310   0.00010508   0.00011619 s, AVG Performance =   669.1025 Gflops
+M N K =    256    256   1024, Time =   0.00010115   0.00010151   0.00010230 s, AVG Performance =  1231.4398 Gflops
+M N K =    384    384   1024, Time =   0.00010195   0.00010271   0.00010330 s, AVG Performance =  2738.1963 Gflops
+M N K =    512    512   1024, Time =   0.00016669   0.00016746   0.00016794 s, AVG Performance =  2985.8589 Gflops
+M N K =    768    768   1024, Time =   0.00032963   0.00033160   0.00033651 s, AVG Performance =  3392.6417 Gflops
+M N K =   1024   1024   1024, Time =   0.00059568   0.00059807   0.00060211 s, AVG Performance =  3344.0879 Gflops
+M N K =   1536   1536   1024, Time =   0.00124890   0.00125158   0.00125603 s, AVG Performance =  3595.4438 Gflops
+M N K =   2048   2048   1024, Time =   0.00213606   0.00214080   0.00214938 s, AVG Performance =  3736.9263 Gflops
+M N K =   3072   3072   1024, Time =   0.00459878   0.00460250   0.00460979 s, AVG Performance =  3910.9187 Gflops
+M N K =   4096   4096   1024, Time =   0.00823706   0.00832498   0.00836710 s, AVG Performance =  3843.8550 Gflops
+M N K =   6144   6144   1024, Time =   0.01863030   0.01905819   0.01934413 s, AVG Performance =  3777.9043 Gflops
+M N K =   8192   8192   1024, Time =   0.03376435   0.03429754   0.03471955 s, AVG Performance =  3732.0463 Gflops
+M N K =  12288  12288   1024, Time =   0.07686451   0.07822924   0.07979008 s, AVG Performance =  3681.4880 Gflops
+M N K =  16384  16384   1024, Time =   0.13829939   0.13945724   0.14129625 s, AVG Performance =  3671.3764 Gflops
 ```
 
 Running log (M = N = K):
@@ -127,21 +109,21 @@ sgemm.exe
 
 Kernal = cublas
 Max Error = 0.000046
-M N K =    128    128    128, Time =   0.00000810   0.00000904   0.00001472 s, AVG Performance =   432.2603 Gflops
-M N K =    192    192    192, Time =   0.00001434   0.00001480   0.00001536 s, AVG Performance =   890.9760 Gflops
-M N K =    256    256    256, Time =   0.00002458   0.00002494   0.00002560 s, AVG Performance =  1253.1278 Gflops
-M N K =    384    384    384, Time =   0.00005293   0.00005401   0.00005939 s, AVG Performance =  1952.6621 Gflops
-M N K =    512    512    512, Time =   0.00011354   0.00011621   0.00013107 s, AVG Performance =  2151.3149 Gflops
-M N K =    768    768    768, Time =   0.00033382   0.00033791   0.00034186 s, AVG Performance =  2496.9637 Gflops
-M N K =   1024   1024   1024, Time =   0.00081306   0.00081871   0.00082125 s, AVG Performance =  2442.8758 Gflops
-M N K =   1536   1536   1536, Time =   0.00251475   0.00254030   0.00260877 s, AVG Performance =  2657.1623 Gflops
-M N K =   2048   2048   2048, Time =   0.00564429   0.00566065   0.00567603 s, AVG Performance =  2826.5324 Gflops
-M N K =   3072   3072   3072, Time =   0.01565139   0.01687993   0.01830864 s, AVG Performance =  3199.0654 Gflops
-M N K =   4096   4096   4096, Time =   0.03473920   0.03559750   0.03739443 s, AVG Performance =  3595.7584 Gflops
-M N K =   6144   6144   6144, Time =   0.12274150   0.12645217   0.12966502 s, AVG Performance =  3416.3114 Gflops
-M N K =   8192   8192   8192, Time =   0.30159444   0.30417176   0.30665785 s, AVG Performance =  3366.5189 Gflops
-M N K =  12288  12288  12288, Time =   0.91910207   0.92301505   0.92669439 s, AVG Performance =  3744.2510 Gflops
-M N K =  16384  16384  16384, Time =   2.20295835   2.20827835   2.21915650 s, AVG Performance =  3709.6773 Gflops
+M N K =    128    128    128, Time =   0.00000819   0.00000954   0.00001648 s, AVG Performance =   409.4945 Gflops
+M N K =    192    192    192, Time =   0.00001514   0.00001537   0.00001610 s, AVG Performance =   857.5922 Gflops
+M N K =    256    256    256, Time =   0.00002458   0.00002601   0.00003379 s, AVG Performance =  1201.3317 Gflops
+M N K =    384    384    384, Time =   0.00005222   0.00005369   0.00006048 s, AVG Performance =  1964.2997 Gflops
+M N K =    512    512    512, Time =   0.00011366   0.00011598   0.00012477 s, AVG Performance =  2155.4697 Gflops
+M N K =    768    768    768, Time =   0.00033382   0.00033700   0.00034586 s, AVG Performance =  2503.7449 Gflops
+M N K =   1024   1024   1024, Time =   0.00080589   0.00081170   0.00081706 s, AVG Performance =  2463.9670 Gflops
+M N K =   1536   1536   1536, Time =   0.00249139   0.00251926   0.00258048 s, AVG Performance =  2679.3540 Gflops
+M N K =   2048   2048   2048, Time =   0.00558675   0.00560333   0.00562790 s, AVG Performance =  2855.4459 Gflops
+M N K =   3072   3072   3072, Time =   0.01541626   0.01671393   0.01865827 s, AVG Performance =  3230.8387 Gflops
+M N K =   4096   4096   4096, Time =   0.03547853   0.03633392   0.03793203 s, AVG Performance =  3522.8785 Gflops
+M N K =   6144   6144   6144, Time =   0.12528509   0.12919393   0.13076964 s, AVG Performance =  3343.8103 Gflops
+M N K =   8192   8192   8192, Time =   0.30787578   0.31097918   0.31303459 s, AVG Performance =  3292.8250 Gflops
+M N K =  12288  12288  12288, Time =   0.93149662   0.93513879   0.94099760 s, AVG Performance =  3695.7081 Gflops
+M N K =  16384  16384  16384, Time =   2.21192169   2.22479570   2.23437285 s, AVG Performance =  3682.1358 Gflops
 
 Kernal = naiveSgemm
 Max Error = 0.000046
@@ -163,73 +145,55 @@ M N K =  16384  16384  16384, Time =  38.52011108  38.54468727  38.57204819 s, A
 
 Kernal = mySgemmV1Aligned
 Max Error = 0.000046
-M N K =    128    128    128, Time =   0.00002458   0.00002583   0.00003542 s, AVG Performance =   151.2268 Gflops
-M N K =    192    192    192, Time =   0.00003472   0.00003539   0.00003994 s, AVG Performance =   372.5021 Gflops
-M N K =    256    256    256, Time =   0.00004403   0.00004480   0.00004560 s, AVG Performance =   697.5446 Gflops
-M N K =    384    384    384, Time =   0.00007600   0.00007789   0.00008067 s, AVG Performance =  1353.9966 Gflops
-M N K =    512    512    512, Time =   0.00012966   0.00013039   0.00013162 s, AVG Performance =  1917.3191 Gflops
-M N K =    768    768    768, Time =   0.00037942   0.00038374   0.00038874 s, AVG Performance =  2198.7498 Gflops
-M N K =   1024   1024   1024, Time =   0.00094106   0.00094315   0.00094714 s, AVG Performance =  2120.5490 Gflops
-M N K =   1536   1536   1536, Time =   0.00290918   0.00292454   0.00299584 s, AVG Performance =  2308.0547 Gflops
-M N K =   2048   2048   2048, Time =   0.00603850   0.00643881   0.00650342 s, AVG Performance =  2484.9301 Gflops
-M N K =   3072   3072   3072, Time =   0.02013798   0.02015975   0.02018611 s, AVG Performance =  2678.6042 Gflops
-M N K =   4096   4096   4096, Time =   0.04789536   0.04840777   0.04866825 s, AVG Performance =  2644.2034 Gflops
-M N K =   6144   6144   6144, Time =   0.16224441   0.16318319   0.16475034 s, AVG Performance =  2647.3316 Gflops
-M N K =   8192   8192   8192, Time =   0.38548636   0.38682916   0.39031807 s, AVG Performance =  2647.1634 Gflops
-M N K =  12288  12288  12288, Time =   1.30809653   1.31411648   1.32363975 s, AVG Performance =  2629.9039 Gflops
-M N K =  16384  16384  16384, Time =   3.09292340   3.11861415   3.13086724 s, AVG Performance =  2626.8078 Gflops
+M N K =    128    128    128, Time =   0.00002458   0.00002798   0.00003539 s, AVG Performance =   139.6047 Gflops
+M N K =    192    192    192, Time =   0.00003482   0.00003587   0.00004080 s, AVG Performance =   367.5505 Gflops
+M N K =    256    256    256, Time =   0.00004480   0.00004517   0.00004602 s, AVG Performance =   691.8615 Gflops
+M N K =    384    384    384, Time =   0.00007680   0.00007788   0.00007885 s, AVG Performance =  1354.3304 Gflops
+M N K =    512    512    512, Time =   0.00012957   0.00013073   0.00013210 s, AVG Performance =  1912.2974 Gflops
+M N K =    768    768    768, Time =   0.00038195   0.00038689   0.00039117 s, AVG Performance =  2180.8728 Gflops
+M N K =   1024   1024   1024, Time =   0.00094515   0.00094748   0.00094998 s, AVG Performance =  2110.8590 Gflops
+M N K =   1536   1536   1536, Time =   0.00292544   0.00294176   0.00301904 s, AVG Performance =  2294.5447 Gflops
+M N K =   2048   2048   2048, Time =   0.00609354   0.00614280   0.00651878 s, AVG Performance =  2604.6740 Gflops
+M N K =   3072   3072   3072, Time =   0.02011910   0.02025107   0.02038374 s, AVG Performance =  2666.5255 Gflops
+M N K =   4096   4096   4096, Time =   0.04818534   0.04850590   0.04890784 s, AVG Performance =  2638.8540 Gflops
+M N K =   6144   6144   6144, Time =   0.16255489   0.16347562   0.16491722 s, AVG Performance =  2642.5959 Gflops
+M N K =   8192   8192   8192, Time =   0.38610819   0.38940083   0.39440566 s, AVG Performance =  2629.6811 Gflops
+M N K =  12288  12288  12288, Time =   1.30881608   1.32298363   1.33404016 s, AVG Performance =  2612.2772 Gflops
+M N K =  16384  16384  16384, Time =   3.11728215   3.13797417   3.15835595 s, AVG Performance =  2610.6015 Gflops
 
 Kernal = mySgemmV2Aligned
 Max Error = 0.000046
-M N K =    128    128    128, Time =   0.00002355   0.00002572   0.00003277 s, AVG Performance =   151.9043 Gflops
-M N K =    192    192    192, Time =   0.00003165   0.00003500   0.00005734 s, AVG Performance =   376.6225 Gflops
-M N K =    256    256    256, Time =   0.00004096   0.00004111   0.00004173 s, AVG Performance =   760.2075 Gflops
-M N K =    384    384    384, Time =   0.00006954   0.00007137   0.00007421 s, AVG Performance =  1477.7825 Gflops
-M N K =    512    512    512, Time =   0.00012186   0.00012466   0.00012698 s, AVG Performance =  2005.4162 Gflops
-M N K =    768    768    768, Time =   0.00036227   0.00036650   0.00036966 s, AVG Performance =  2302.1878 Gflops
-M N K =   1024   1024   1024, Time =   0.00088998   0.00091328   0.00096000 s, AVG Performance =  2189.9089 Gflops
-M N K =   1536   1536   1536, Time =   0.00278467   0.00279072   0.00279418 s, AVG Performance =  2418.7334 Gflops
-M N K =   2048   2048   2048, Time =   0.00615626   0.00616340   0.00617062 s, AVG Performance =  2595.9718 Gflops
-M N K =   3072   3072   3072, Time =   0.02031718   0.02041148   0.02065306 s, AVG Performance =  2645.5707 Gflops
-M N K =   4096   4096   4096, Time =   0.04808499   0.04863715   0.04894198 s, AVG Performance =  2631.7330 Gflops
-M N K =   6144   6144   6144, Time =   0.16356659   0.16454075   0.16566989 s, AVG Performance =  2625.4894 Gflops
-M N K =   8192   8192   8192, Time =   0.38789016   0.39004070   0.39194059 s, AVG Performance =  2625.3670 Gflops
-M N K =  12288  12288  12288, Time =   1.32070506   1.32592825   1.33199239 s, AVG Performance =  2606.4759 Gflops
-M N K =  16384  16384  16384, Time =   3.12807369   3.13660860   3.14892960 s, AVG Performance =  2611.7380 Gflops
+M N K =    128    128    128, Time =   0.00001946   0.00002388   0.00002966 s, AVG Performance =   163.5893 Gflops
+M N K =    192    192    192, Time =   0.00002813   0.00003097   0.00003379 s, AVG Performance =   425.7387 Gflops
+M N K =    256    256    256, Time =   0.00003638   0.00003688   0.00003786 s, AVG Performance =   847.2692 Gflops
+M N K =    384    384    384, Time =   0.00006451   0.00006602   0.00006758 s, AVG Performance =  1597.5466 Gflops
+M N K =    512    512    512, Time =   0.00010947   0.00011129   0.00011366 s, AVG Performance =  2246.4560 Gflops
+M N K =    768    768    768, Time =   0.00031840   0.00032098   0.00032352 s, AVG Performance =  2628.6488 Gflops
+M N K =   1024   1024   1024, Time =   0.00078326   0.00078729   0.00079210 s, AVG Performance =  2540.3716 Gflops
+M N K =   1536   1536   1536, Time =   0.00245350   0.00247036   0.00248730 s, AVG Performance =  2732.3935 Gflops
+M N K =   2048   2048   2048, Time =   0.00552448   0.00553712   0.00554906 s, AVG Performance =  2889.5871 Gflops
+M N K =   3072   3072   3072, Time =   0.01870282   0.01896951   0.01908122 s, AVG Performance =  2846.6729 Gflops
+M N K =   4096   4096   4096, Time =   0.04518448   0.04542650   0.04559546 s, AVG Performance =  2817.7386 Gflops
+M N K =   6144   6144   6144, Time =   0.15309401   0.15442241   0.15621108 s, AVG Performance =  2797.5214 Gflops
+M N K =   8192   8192   8192, Time =   0.36685485   0.36822633   0.37003979 s, AVG Performance =  2780.8983 Gflops
+M N K =  12288  12288  12288, Time =   1.24375021   1.25105864   1.26140726 s, AVG Performance =  2762.4604 Gflops
+M N K =  16384  16384  16384, Time =   2.94956017   2.96272037   2.97955632 s, AVG Performance =  2765.0264 Gflops
 
 Kernal = mySgemmV3Aligned
 Max Error = 0.000046
-M N K =    128    128    128, Time =   0.00002662   0.00002846   0.00003046 s, AVG Performance =   137.2348 Gflops
-M N K =    192    192    192, Time =   0.00002922   0.00003233   0.00004157 s, AVG Performance =   407.7871 Gflops
-M N K =    256    256    256, Time =   0.00003754   0.00003785   0.00003843 s, AVG Performance =   825.6362 Gflops
-M N K =    384    384    384, Time =   0.00006640   0.00006707   0.00006803 s, AVG Performance =  1572.5457 Gflops
-M N K =    512    512    512, Time =   0.00011264   0.00011400   0.00012112 s, AVG Performance =  2192.9824 Gflops
-M N K =    768    768    768, Time =   0.00032518   0.00032938   0.00033485 s, AVG Performance =  2561.6123 Gflops
-M N K =   1024   1024   1024, Time =   0.00080691   0.00081574   0.00086835 s, AVG Performance =  2451.7688 Gflops
-M N K =   1536   1536   1536, Time =   0.00252474   0.00254751   0.00260915 s, AVG Performance =  2649.6457 Gflops
-M N K =   2048   2048   2048, Time =   0.00568934   0.00569828   0.00572061 s, AVG Performance =  2807.8672 Gflops
-M N K =   3072   3072   3072, Time =   0.01865494   0.01880193   0.01900285 s, AVG Performance =  2872.0452 Gflops
-M N K =   4096   4096   4096, Time =   0.04518519   0.04533109   0.04564579 s, AVG Performance =  2823.6691 Gflops
-M N K =   6144   6144   6144, Time =   0.15247642   0.15419533   0.15553536 s, AVG Performance =  2801.6413 Gflops
-M N K =   8192   8192   8192, Time =   0.36530033   0.36760603   0.36902574 s, AVG Performance =  2785.5909 Gflops
-M N K =  12288  12288  12288, Time =   1.24510872   1.25124462   1.25907767 s, AVG Performance =  2762.0498 Gflops
-M N K =  16384  16384  16384, Time =   2.94744158   2.96043472   2.96953130 s, AVG Performance =  2767.1612 Gflops
-
-Kernal = mySgemmV4Aligned
-Max Error = 0.000046
-M N K =    128    128    128, Time =   0.00001533   0.00001756   0.00002662 s, AVG Performance =   222.5124 Gflops
-M N K =    192    192    192, Time =   0.00002048   0.00002370   0.00003277 s, AVG Performance =   556.2135 Gflops
-M N K =    256    256    256, Time =   0.00002662   0.00002740   0.00002765 s, AVG Performance =  1140.7108 Gflops
-M N K =    384    384    384, Time =   0.00004198   0.00004401   0.00004502 s, AVG Performance =  2396.4942 Gflops
-M N K =    512    512    512, Time =   0.00008563   0.00008636   0.00008765 s, AVG Performance =  2894.6979 Gflops
-M N K =    768    768    768, Time =   0.00025251   0.00025383   0.00025498 s, AVG Performance =  3324.0699 Gflops
-M N K =   1024   1024   1024, Time =   0.00059270   0.00059786   0.00060259 s, AVG Performance =  3345.2513 Gflops
-M N K =   1536   1536   1536, Time =   0.00187037   0.00187631   0.00188314 s, AVG Performance =  3597.4858 Gflops
-M N K =   2048   2048   2048, Time =   0.00423424   0.00424690   0.00425779 s, AVG Performance =  3767.4518 Gflops
-M N K =   3072   3072   3072, Time =   0.01390493   0.01392482   0.01397341 s, AVG Performance =  3877.9669 Gflops
-M N K =   4096   4096   4096, Time =   0.03352470   0.03471167   0.03530854 s, AVG Performance =  3687.5206 Gflops
-M N K =   6144   6144   6144, Time =   0.11934720   0.12024057   0.12203779 s, AVG Performance =  3592.7972 Gflops
-M N K =   8192   8192   8192, Time =   0.28308991   0.28725496   0.29020417 s, AVG Performance =  3564.7774 Gflops
-M N K =  12288  12288  12288, Time =   0.97488689   0.98353222   0.98975438 s, AVG Performance =  3513.8656 Gflops
-M N K =  16384  16384  16384, Time =   2.33891344   2.36202195   2.37871718 s, AVG Performance =  3468.2150 Gflops
+M N K =    128    128    128, Time =   0.00001434   0.00001625   0.00002666 s, AVG Performance =   240.3432 Gflops
+M N K =    192    192    192, Time =   0.00002048   0.00002260   0.00002970 s, AVG Performance =   583.3862 Gflops
+M N K =    256    256    256, Time =   0.00002643   0.00002728   0.00002925 s, AVG Performance =  1145.5278 Gflops
+M N K =    384    384    384, Time =   0.00004301   0.00004428   0.00005024 s, AVG Performance =  2381.7737 Gflops
+M N K =    512    512    512, Time =   0.00008496   0.00008544   0.00008602 s, AVG Performance =  2925.9204 Gflops
+M N K =    768    768    768, Time =   0.00024733   0.00024910   0.00025088 s, AVG Performance =  3387.1831 Gflops
+M N K =   1024   1024   1024, Time =   0.00058630   0.00058876   0.00059069 s, AVG Performance =  3396.9976 Gflops
+M N K =   1536   1536   1536, Time =   0.00184627   0.00185586   0.00186778 s, AVG Performance =  3637.1293 Gflops
+M N K =   2048   2048   2048, Time =   0.00418947   0.00419546   0.00420659 s, AVG Performance =  3813.6469 Gflops
+M N K =   3072   3072   3072, Time =   0.01391411   0.01416870   0.01426595 s, AVG Performance =  3811.2175 Gflops
+M N K =   4096   4096   4096, Time =   0.03363923   0.03483078   0.03533091 s, AVG Performance =  3674.9104 Gflops
+M N K =   6144   6144   6144, Time =   0.11930420   0.12090832   0.12276097 s, AVG Performance =  3572.9552 Gflops
+M N K =   8192   8192   8192, Time =   0.28747058   0.29165312   0.29408255 s, AVG Performance =  3511.0202 Gflops
+M N K =  12288  12288  12288, Time =   0.97516549   0.99364190   1.00369000 s, AVG Performance =  3478.1142 Gflops
+M N K =  16384  16384  16384, Time =   2.34599519   2.37120268   2.38566184 s, AVG Performance =  3454.7869 Gflops
 ```
