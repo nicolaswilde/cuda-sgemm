@@ -1,3 +1,5 @@
+Detailed Introduction: https://zhuanlan.zhihu.com/p/518857175
+
 # cuda-sgemm
 
 Nvidia GTX1060 Mobile / Intel i7 7700HQ / Windows 10
