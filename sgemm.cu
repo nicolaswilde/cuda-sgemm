@@ -239,10 +239,14 @@ __global__ void mySgemmV3Aligned(
         FLOAT4(s_b[0][load_b_smem_k][load_b_smem_n]) = FLOAT4(r_load_b[0]);
     }
 
+    __syncthreads();
+    int smem_sel;
+    int smem_sel_next;
+
     for (int bk = 1; bk < (K + BK - 1) / BK; bk++) {
 
-        int smem_sel = (bk - 1) & 1;
-        int smem_sel_next = bk & 1;
+        smem_sel = (bk - 1) & 1;
+        smem_sel_next = bk & 1;
 
         int load_a_gmem_k = bk * BK + load_a_smem_k;
         int load_a_gmem_addr = OFFSET(load_a_gmem_m, load_a_gmem_k, K);
@@ -278,10 +282,10 @@ __global__ void mySgemmV3Aligned(
 
     #pragma unroll
     for (int tk = 0; tk < BK; tk++) {
-        FLOAT4(r_comp_a[0]) = FLOAT4(s_a[1][tk][ty * TM / 2         ]);
-        FLOAT4(r_comp_a[4]) = FLOAT4(s_a[1][tk][ty * TM / 2 + BM / 2]);
-        FLOAT4(r_comp_b[0]) = FLOAT4(s_b[1][tk][tx * TN / 2         ]);
-        FLOAT4(r_comp_b[4]) = FLOAT4(s_b[1][tk][tx * TN / 2 + BN / 2]);
+        FLOAT4(r_comp_a[0]) = FLOAT4(s_a[smem_sel_next][tk][ty * TM / 2         ]);
+        FLOAT4(r_comp_a[4]) = FLOAT4(s_a[smem_sel_next][tk][ty * TM / 2 + BM / 2]);
+        FLOAT4(r_comp_b[0]) = FLOAT4(s_b[smem_sel_next][tk][tx * TN / 2         ]);
+        FLOAT4(r_comp_b[4]) = FLOAT4(s_b[smem_sel_next][tk][tx * TN / 2 + BN / 2]);
 
         #pragma unroll
         for (int tm = 0; tm < TM; tm++) {
